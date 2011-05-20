@@ -1,0 +1,45 @@
+<MediaPiece>
+
+	<aVideo
+	 	objID="(parameters.objID)"
+		onInit="root.initHandler, aMediaController.rewindButton.disable, aMediaController.thumb.disable, aMediaController.volumeButton.disable"
+		onIntro="root.introHandler"
+		onPlay="aMediaController.rewindButton.enable, aMediaController.thumb.enable, aMediaController.volumeButton.enable"
+		onComplete="root.streamCompleteHandler"
+		onUpdateTime="root.updateTimeHandler"
+		onLoadProgress="root.loadProgressHandler"
+		onJavascriptPlay="play"
+		onJavascriptPause="pause"
+		onJavascriptStop="stop"
+		onJavascriptRewind="rewind">
+		<source
+			trackingPlayerName="(parameters.trackingPlayerName)"
+			trackingTitle="(parameters.trackingTitle)"
+			trackingSuite="(parameters.trackingSuite)"
+			
+			url="(parameters.URL)" 
+			default="(parameters.source)" />
+	</aVideo>
+
+	<aMediaController target="aVideo"
+		
+		playPauseButton.focusBG.alpha="0"
+		playPauseButton.states.play.focus.focusBG.alpha="1" 
+		playPauseButton.states.pause.focus.focusBG.alpha="1"
+		playPauseButton.states.play.focus.key.keyFocusIndicator.alpha="1" 
+		playPauseButton.states.pause.focus.key.keyFocusIndicator.alpha="1"
+		
+		rewindButton.states.focus.key.keyFocusIndicator.alpha="1"
+		 
+		volumeButton.focusBG.alpha="0"
+		volumeButton.states.audible.focus.focusBG.alpha="1"
+		volumeButton.states.inaudible.focus.focusBG.alpha="1"
+		volumeButton.states.audible.focus.key.keyFocusIndicator.alpha="1" 
+		volumeButton.states.inaudible.focus.key.keyFocusIndicator.alpha="1"
+		
+		thumb.states.focus.key.keyFocusIndicator.alpha="1"
+		
+		volumeSlider.thumb.states.focus.key.keyFocusIndicator.alpha="1"
+	/>
+
+</MediaPiece>

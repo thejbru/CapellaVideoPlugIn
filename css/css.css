@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background:#e1d1b2;
+	position:relative;
+}
+
+header {
+	background:#fff;
+	border-bottom:1px solid #630B17;
+	height:108px;
+	width:100%;
+}
+
+header h1 {
+	color:#fff;
+	font: normal 30px/107px "Avenir LT Std", Helvetica, sans-serif;
+	height:107px;
+	background: #AE1F34; /* old browsers */
+	background: -moz-linear-gradient(top, #AE1F34 0%, #630B17 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#AE1F34), color-stop(100%,#630B17)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AE1F34', endColorstr='#630B17',GradientType=0 ); /* ie */
+}
+
+#title, #copyright {
+	display:block;
+	margin:0 auto;
+	padding: 0 20px;
+	width:880px;
+}
+
+#logo {
+	background:url("../images/transparentLogo.png") no-repeat scroll right center transparent;
+	float:right;
+	height:107px;
+	width:189px;
+}
+
+footer {
+	background:#fff;
+	border-top:1px solid #676767;
+	border-bottom:1px solid #e1d1b2;
+	height:75px;
+	margin-top:-60px;
+	position:relative;
+	width:100%;
+	z-index:1;
+}
+
+footer p {
+	background:#676767;
+	color:#fff;
+	font: normal 11px/75px Arial, Helvetica, sans-serif;
+	height:74px;
+	position:relative;
+	text-align:center;
+	top:1px;
+}
+
+#copyright {
+	height:40px;
+	position:relative;
+}
+
+#credits {
+	float:left;
+}
+
+body > section {
+	background:#fff;
+	clear:both;
+	display:block;
+	margin:0 auto 15px;
+	min-height:450px;
+	padding:20px;
+	position:relative;
+	top:-25px;
+	width:880px;
+	z-index:50;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+
+	-moz-box-shadow: 0px 0px 4px #000;
+	-webkit-box-shadow: 0px 0px 4px #000;
+	box-shadow: 0px 0px 4px #000;
+}
