@@ -1,1 +1,2 @@
-A jQuery plug-in being developed to build HTML/CSS playhead for HTML5 video. It falls back to Flash if the browser does not support H.264.
+A jQuery plug-in being developed to build HTML/CSS playhead for HTML5 video. It falls back to Flash 
+if the browser does not support H.264.
